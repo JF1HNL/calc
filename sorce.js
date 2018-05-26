@@ -9,7 +9,7 @@ class Keisan{
         this.n = n;
     }
     keisan(){
-        if(ele.innerText == 0){
+        if(ele.innerText == 0 && syoflag == 0){
             ele.innerText = ''
         }
         ele.innerText = ele.innerText + this.n;

@@ -3,6 +3,8 @@
     color: #00A0E9;
     width: 300px;
     height: 50px;
+    display: table-cell;
+    vertical-align: middle;
 }
 #bbb{
     width: 300px;
@@ -12,7 +14,9 @@
 .buttoncss{
     background-color: #00A0E9;
     color: #fff;
-    font-size: 50px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
 }
 
 .yoko1{
@@ -20,5 +24,6 @@
 }
 
 .yoko2{
-    padding: 0px 100px;
+    width: 160px;
+    height: 50px;
 }
