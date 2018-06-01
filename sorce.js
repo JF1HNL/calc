@@ -4,6 +4,7 @@ let syoflag = 0;
 let fff = [];
 const ele = document.getElementById('aaa');
 
+/*
 class Keisan{
     constructor(n){
         this.n = n;
@@ -17,27 +18,101 @@ class Keisan{
     }
 }
 
-/*
-one = new Keisan(1);
-two = new Keisan(2);
-three = new Keisan(3);
-four = new Keisan(4);
-five = new Keisan(5);
-six = new Keisan(6);
-seven = new Keisan(7);
-eight = new Keisan(8);
-nine = new Keisan(9);
-*/
-
 for(let i = 0;i < 10;i++){
     fff[i] = new Keisan(i);
 }
 
 fff[11] = new Keisan('00');
 fff[12] = new Keisan('000');
+*/
 
+function num1(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 1;
+    console.log(ele.innerText);
+}
 
+function num2(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 2;
+    console.log(ele.innerText);
+}
 
+function num3(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 3;
+    console.log(ele.innerText);
+}
+
+function num4(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 4;
+    console.log(ele.innerText);
+}
+
+function num5(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 5;
+    console.log(ele.innerText);
+}
+
+function num6(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 6;
+    console.log(ele.innerText);
+}
+
+function num7(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 7;
+    console.log(ele.innerText);
+}
+
+function num8(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 8;
+    console.log(ele.innerText);
+}
+
+function num9(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 9;
+    console.log(ele.innerText);
+}
+
+function num0(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + 0;
+    console.log(ele.innerText);
+}
+
+function num00(){
+    if(ele.innerText == 0 && syoflag == 0){
+        ele.innerText = ''
+    }
+    ele.innerText = ele.innerText + '00';
+    console.log(ele.innerText);
+}
 
 function kei(){
     console.log("kei", `flag: ${ flag } aaa: ${ aaa } text: ${ ele.innerText }`)
@@ -76,7 +151,7 @@ function plus(){
     ele.innerText = '0';
 }
 
-function hiku(){
+function diff(){
     if(flag > 0){
         kei();
     }else{
@@ -87,7 +162,7 @@ function hiku(){
     ele.innerText = '0';
 }
 
-function kake(){
+function mult(){
     if(flag > 0){
         kei();
     }else{
@@ -98,7 +173,7 @@ function kake(){
     ele.innerText = '0';
 }
 
-function waru(){
+function divi(){
     if(flag > 0){
         kei();
     }else{
@@ -127,7 +202,7 @@ function equal(){
     ele.innerText = aaa + Number(ele.innerText)
 }
 */
-function kesu(){
+function clear(){
     ele.innerText = '0';
     flag = 0;
     syoflag = 0;

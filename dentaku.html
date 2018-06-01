@@ -6,35 +6,34 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
-        <div id = "aaa" style="border-style: solid; border-width: 1px;">
+        <div id = "calc_area" style="border-style: solid; border-width: 1px;">
                 0
         </div>
-        <div id = "bbb">
-        <input type="button" value="C" onclick="kesu();" class="buttoncss  yoko2">
-        <input type="button" value="/" onclick="waru();" class="buttoncss  ">
+        <div id = "button_area">
+        <input type="button" value="C" onclick="clear();" class="button_style  big">
+        <input type="button" value="/" onclick="divi();" class="button_style  ">
         <br>
-        <input type="button" value="7" onclick="fff[7].keisan();" class="buttoncss  ">
-        <input type="button" value="8" onclick="fff[8].keisan();" class="buttoncss  ">
-        <input type="button" value="9" onclick="fff[9].keisan();" class="buttoncss  ">
-        <input type="button" value="*" onclick="kake();" class="buttoncss  ">
+        <input type="button" value="7" onclick="num7();" class="button_style  ">
+        <input type="button" value="8" onclick="num8();" class="button_style  ">
+        <input type="button" value="9" onclick="num9();" class="button_style  ">
+        <input type="button" value="*" onclick="mult();" class="button_style  ">
         <br>
-        <input type="button" value="4" onclick="fff[4].keisan();" class="buttoncss  ">
-        <input type="button" value="5" onclick="fff[5].keisan();" class="buttoncss  ">
-        <input type="button" value="6" onclick="fff[6].keisan();" class="buttoncss  ">
-        <input type="button" value="-" onclick="hiku();" class="buttoncss  ">
+        <input type="button" value="4" onclick="num4();" class="button_style  ">
+        <input type="button" value="5" onclick="num5();" class="button_style  ">
+        <input type="button" value="6" onclick="num6();" class="button_style  ">
+        <input type="button" value="-" onclick="diff();" class="button_style  ">
         <br>
-        <input type="button" value="1" onclick="fff[1].keisan();" class="buttoncss  ">
-        <input type="button" value="2" onclick="fff[2].keisan();" class="buttoncss  ">
-        <input type="button" value="3" onclick="fff[3].keisan();" class="buttoncss  ">
-        <input type="button" value="+" onclick="plus();" class="buttoncss  ">
+        <input type="button" value="1" onclick="num1();" class="button_style  ">
+        <input type="button" value="2" onclick="num2();" class="button_style  ">
+        <input type="button" value="3" onclick="num3();" class="button_style  ">
+        <input type="button" value="+" onclick="plus();" class="button_style  ">
         <br>
-        <input type="button" value="0" onclick="fff[0].keisan();" class="buttoncss">
-        <input type="button" value="00" onclick="fff[11].keisan();" class="buttoncss">
-        <input type="button" value="." onclick="syousu();" class="buttoncss  ">
-        <input type="button" value="=" onclick="equal();" class="buttoncss  ">
-        <br>
-        <script type="text/javascript" src="sorce.js">
+        <input type="button" value="0" onclick="num0();" class="button_style">
+        <input type="button" value="00" onclick="num00();" class="button_style">
+        <input type="button" value="." onclick="syousu();" class="button_style  ">
+        <input type="button" value="=" onclick="equal();" class="button_style  ">
         </script>
         </div>
+        <script type="text/javascript" src="sorce.js"></script>
     </body>
 </html>

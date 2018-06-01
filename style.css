@@ -1,4 +1,4 @@
-#aaa{
+#calc_area{
     font-size:30px;
     color: #00A0E9;
     width: 220px;
@@ -6,12 +6,12 @@
     display: table-cell;
     vertical-align: middle;
 }
-#bbb{
+#button_area{
     width: 220px;
     background-color: #9FD9F6;
 }
 
-.buttoncss{
+.button_style{
     background-color: #00A0E9;
     color: #fff;
     font-size: 25px;
@@ -19,11 +19,7 @@
     height: 50px;
 }
 
-.yoko1{
-    padding: 0px 20px;
-}
-
-.yoko2{
+.big{
     width: 160px;
     height: 50px;
 }
