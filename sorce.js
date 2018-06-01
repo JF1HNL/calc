@@ -1,8 +1,8 @@
-let aaa = 0;
+let memory = 0;
 let flag = 0;
 let syoflag = 0;
-let fff = [];
-const ele = document.getElementById('aaa');
+//let fff = [];
+const ele = document.getElementById('calc_area');
 
 /*
 class Keisan{
@@ -115,21 +115,21 @@ function num00(){
 }
 
 function kei(){
-    console.log("kei", `flag: ${ flag } aaa: ${ aaa } text: ${ ele.innerText }`)
+    console.log("keisan");
     if(flag == 1){
-        aaa = Number(aaa) + Number(ele.innerText);
+        memory = Number(memory) + Number(ele.innerText);
     }else if(flag == 2){
-        aaa = Number(aaa) - Number(ele.innerText);
+        memory = Number(memory) - Number(ele.innerText);
     }else if(flag == 3){
-        aaa = Number(aaa) * Number(ele.innerText);
+        memory = Number(memory) * Number(ele.innerText);
     }else if(flag == 4){
         if(Number(ele.innerText) == 0){
         }else{
-            console.log(Number(aaa),  Number(ele.innerText))
-            aaa = Number(aaa) / Number(ele.innerText);
+            console.log(Number(memory),  Number(ele.innerText))
+            memory = Number(memory) / Number(ele.innerText);
         }
     }
-    console.log("aaa: " + aaa)
+    console.log("memory: " + memory)
 }
 
 function syousu(){
@@ -144,7 +144,7 @@ function plus(){
     if(flag > 0){
         kei();
     }else{
-        aaa = ele.innerText;
+        memory = ele.innerText;
     }
     flag = 1;
     syoflag = 0;
@@ -155,7 +155,7 @@ function diff(){
     if(flag > 0){
         kei();
     }else{
-        aaa = ele.innerText;
+        memory = ele.innerText;
     }
     flag = 2;
     syoflag = 0;
@@ -166,7 +166,7 @@ function mult(){
     if(flag > 0){
         kei();
     }else{
-        aaa = ele.innerText;
+        memory = ele.innerText;
     }
     flag = 3;
     syoflag = 0;
@@ -177,7 +177,7 @@ function divi(){
     if(flag > 0){
         kei();
     }else{
-        aaa = ele.innerText;
+        memory = ele.innerText;
     }
     flag = 4;
     syoflag = 0;
@@ -188,24 +188,24 @@ function equal(){
     kei();
     flag = 0;
     syoflag = 0;
-    ele.innerText = aaa;
+    ele.innerText = memory;
 }
 /*
 function plus(){
-    //const ele = document.getElementById('aaa');
-    aaa = Number(ele.innerText);
+    //const ele = document.getElementById('memory');
+    memory = Number(ele.innerText);
     ele.innerText = '';
 }
 
 function equal(){
-    //const ele = document.getElementById('aaa');
-    ele.innerText = aaa + Number(ele.innerText)
+    //const ele = document.getElementById('memory');
+    ele.innerText = memory + Number(ele.innerText)
 }
 */
 function clear(){
     ele.innerText = '0';
     flag = 0;
     syoflag = 0;
-    aaa = 0;
+    memory = 0;
     console.log("clear");
 }
