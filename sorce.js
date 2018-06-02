@@ -26,92 +26,17 @@ fff[11] = new Keisan('00');
 fff[12] = new Keisan('000');
 */
 
-function num1(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
+function num(n){
+    if(n == '00' && ele.innerText == '0'){
+        console.log('first_00_click');
+    }else{
+        if(ele.innerText == 0 && syoflag == 0){
+            ele.innerText = '';
+        }
+        ele.innerText = ele.innerText + n;
+        console.log(ele.innerText);
     }
-    ele.innerText = ele.innerText + 1;
-    console.log(ele.innerText);
-}
-
-function num2(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + 2;
-    console.log(ele.innerText);
-}
-
-function num3(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + 3;
-    console.log(ele.innerText);
-}
-
-function num4(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + 4;
-    console.log(ele.innerText);
-}
-
-function num5(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + 5;
-    console.log(ele.innerText);
-}
-
-function num6(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + 6;
-    console.log(ele.innerText);
-}
-
-function num7(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + 7;
-    console.log(ele.innerText);
-}
-
-function num8(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + 8;
-    console.log(ele.innerText);
-}
-
-function num9(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + 9;
-    console.log(ele.innerText);
-}
-
-function num0(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + 0;
-    console.log(ele.innerText);
-}
-
-function num00(){
-    if(ele.innerText == 0 && syoflag == 0){
-        ele.innerText = ''
-    }
-    ele.innerText = ele.innerText + '00';
-    console.log(ele.innerText);
+    
 }
 
 function kei(){
@@ -185,6 +110,7 @@ function divi(){
 }
 
 function equal(){
+    console.log("equal")
     kei();
     flag = 0;
     syoflag = 0;
@@ -202,7 +128,7 @@ function equal(){
     ele.innerText = memory + Number(ele.innerText)
 }
 */
-function clear(){
+function clear_num(){
     ele.innerText = '0';
     flag = 0;
     syoflag = 0;
