@@ -1,3 +1,6 @@
+import parser from './parser.js'
+console.log(parser);
+
 let memory = 0;
 let flag = 0;
 let syoflag = 0;
@@ -36,7 +39,6 @@ function num(n){
         ele.innerText = ele.innerText + n;
         console.log(ele.innerText);
     }
-    
 }
 
 function kei(){
