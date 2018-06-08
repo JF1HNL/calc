@@ -1,5 +1,5 @@
-import parser from './parser.js'
-console.log(parser);
+//import parser from './parser.js'
+//console.log(parser);
 
 let memory = 0;
 let flag = 0;
