@@ -2,7 +2,7 @@ import parser from './parser.js';
 //console.log(parser.parse('5'));
 console.log('welcome to calculator(parser)')
 
-let memory = 0;
+let memory = '';
 let flag = [];
 flag[1] = 0;
 //flag[1]```syousuten pushed 1 NOTpushed 0```
@@ -17,7 +17,7 @@ flag[4] = 0;
 //flag[4]```numbutton push number
 flag[5] = 0;
 //flag[5]```symbolbutton push
-flag[6] = 0;
+flag[6] = '';
 //flag[6]```before culc
 flag[7] = 0;
 //flag[7]```push_equal_num 
@@ -252,7 +252,9 @@ ele_equal.addEventListener('click', () => {
     console.log('flag[7]:' + flag[7]);
     console.log('memory : ' + memory);
     ele.innerText = parser.parse(String(memory));
+    flag[6] = '';
     flag[7]++;
+    flag[1] = 0;
 })
 
 function equal(){
@@ -282,8 +284,9 @@ ele_decimal.addEventListener('click', () => {
 const ele_clear_num = document.getElementById('clear_num');
 ele_clear_num.addEventListener('click', () => {
     ele.innerText = '0';
-    memory = 0;
+    memory = '';
     flag[1] = 0;
+    flag[6] = '';
     flag[7] = 0;
     symbol[1] = 0; //symbol_flag pushed 1
     symbol[2] = 0; //symbol_character
