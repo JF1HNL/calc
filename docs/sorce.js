@@ -1,6 +1,6 @@
 import parser from './parser.js';
 //console.log(parser.parse('5'));
-console.log('welcome to calculator(parser)')
+console.log('welcome to calculator(parser)');
 
 let memory = '';
 let flag = [];
@@ -28,7 +28,7 @@ symbol[2] = 0; //symbol_character
 
 let syoflag = 0;
 const elenum = [];
-//let fff = [];
+//num button creat
 for(let i = 0;i < 10;i++){
     flag[1] = 0;
     elenum[i] = document.getElementById('num' + i);
@@ -50,6 +50,7 @@ for(let i = 0;i < 10;i++){
         console.log(ele.innerText);
     });
 }
+//00button creat
 elenum[100] = document.getElementById('num00');
 elenum[100].addEventListener('click', () => {
     flag[4] = '00';
@@ -76,9 +77,7 @@ function decimal_(){
         }else{
             memory = memory + ele.innerText;
         }
-        console.log('before' + flag[6]);
         flag[6] = flag[6] + ele.innerText;
-        console.log('after' + flag[6]);
     }else{
         if(memory == 0){
             memory = Number(decimal);
@@ -90,67 +89,6 @@ function decimal_(){
     console.log('decimal memory:' + memory);
 }
 
-/*
-class Keisan{
-    constructor(n){
-        this.n = n;
-    }
-    keisan(){
-        if(ele.innerText == 0 && syoflag == 0){
-            ele.innerText = ''
-        }
-        ele.innerText = ele.innerText + this.n;
-        console.log(ele.innerText);
-    }
-}
-
-for(let i = 0;i < 10;i++){
-    fff[i] = new Keisan(i);
-}
-
-fff[11] = new Keisan('00');
-fff[12] = new Keisan('000');
-*/
-/*
-function num(n){
-    if(n == '00' && ele.innerText == '0'){
-        console.log('first_00_click');
-    }else{
-        if(ele.innerText == 0 && syoflag == 0){
-            ele.innerText = '';
-        }
-        ele.innerText = ele.innerText + n;
-        console.log(ele.innerText);
-    }
-}
-
-function kei(){
-    console.log("keisan");
-    if(flag == 1){
-        memory = Number(memory) + Number(ele.innerText);
-    }else if(flag == 2){
-        memory = Number(memory) - Number(ele.innerText);
-    }else if(flag == 3){
-        memory = Number(memory) * Number(ele.innerText);
-    }else if(flag == 4){
-        if(Number(ele.innerText) == 0){
-        }else{
-            console.log(Number(memory),  Number(ele.innerText))
-            memory = Number(memory) / Number(ele.innerText);
-        }
-    }
-    console.log("memory: " + memory)
-}
-
-function syousu(){
-    if(syoflag === 0){
-        ele.innerText = ele.innerText + ".";
-        console.log(ele.innerText);
-    }
-    syoflag = 1;
-}
-
-*/
 const ele_plus = document.getElementById('plus');
 ele_plus.addEventListener('click', () => {
     flag[5] = '+';
@@ -252,7 +190,6 @@ ele_equal.addEventListener('click', () => {
     console.log('flag[7]:' + flag[7]);
     console.log('memory : ' + memory);
     ele.innerText = parser.parse(String(memory));
-    flag[6] = '';
     flag[7]++;
     flag[1] = 0;
 })
