@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>JF1HNL's calculator</title>
+        <title>JF1HNL's calculator(Parser)</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
@@ -10,30 +10,35 @@
                 0
         </div>
         <div id = "button_area">
+<<<<<<< HEAD
         <input type="button" value="C" onclick="clear_num(); "class="button_style  big">
         <input type="button" value="/" onclick="divi();" class="button_style  ">
+=======
+        <input type="button" value="C" id="clear_num" class="button_style  big">
+        <input type="button" value="/" id="divi" class="button_style  ">
+>>>>>>> parser
         <br>
-        <input type="button" value="7" onclick="num(7);" class="button_style  ">
-        <input type="button" value="8" onclick="num(8);" class="button_style  ">
-        <input type="button" value="9" onclick="num(9);" class="button_style  ">
-        <input type="button" value="*" onclick="mult();" class="button_style  ">
+        <input type="button" value="7" id="num7" class="button_style  ">
+        <input type="button" value="8" id="num8" class="button_style  ">
+        <input type="button" value="9" id="num9" class="button_style  ">
+        <input type="button" value="*" id="mult" class="button_style  ">
         <br>
-        <input type="button" value="4" onclick="num(4);" class="button_style  ">
-        <input type="button" value="5" onclick="num(5);" class="button_style  ">
-        <input type="button" value="6" onclick="num(6);" class="button_style  ">
-        <input type="button" value="-" onclick="diff();" class="button_style  ">
+        <input type="button" value="4" id="num4" class="button_style  ">
+        <input type="button" value="5" id="num5" class="button_style  ">
+        <input type="button" value="6" id="num6" class="button_style  ">
+        <input type="button" value="-" id="diff" class="button_style  ">
         <br>
-        <input type="button" value="1" onclick="num(1);" class="button_style  ">
-        <input type="button" value="2" onclick="num(2);" class="button_style  ">
-        <input type="button" value="3" onclick="num(3);" class="button_style  ">
-        <input type="button" value="+" onclick="plus();" class="button_style  ">
+        <input type="button" value="1" id="num1" class="button_style  ">
+        <input type="button" value="2" id="num2" class="button_style  ">
+        <input type="button" value="3" id="num3" class="button_style  ">
+        <input type="button" value="+" id="plus" class="button_style  ">
         <br>
-        <input type="button" value="0" onclick="num(0);" class="button_style">
-        <input type="button" value="00" onclick="num('00');" class="button_style">
-        <input type="button" value="." onclick="syousu();" class="button_style  ">
-        <input type="button" value="=" onclick="equal();" class="button_style  ">
+        <input type="button" value="0" id="num0" class="button_style">
+        <input type="button" value="00" id="num00" class="button_style">
+        <input type="button" value="." id="decimal" class="button_style  ">
+        <input type="button" value="=" id="equal" class="button_style  ">
         </script>
         </div>
-        <script  src="sorce.js"></script>
+        <script type="module" src="./sorce.js"></script>
     </body>
 </html>
