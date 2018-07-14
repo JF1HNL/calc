@@ -92,6 +92,7 @@ function decimal_(){
 const ele_plus = document.getElementById('plus');
 ele_plus.addEventListener('click', () => {
     flag[5] = '+';
+    flag[4] = flag[5];
     console.log('plus');
     decimal_();
     ele.innerText = 0;
@@ -103,6 +104,7 @@ ele_plus.addEventListener('click', () => {
 const ele_diff = document.getElementById('diff');
 ele_diff.addEventListener('click', () => {
     flag[5] = '-';
+    flag[4] = flag[5];
     console.log('diff');
     decimal_();
     ele.innerText = 0;
@@ -114,6 +116,7 @@ ele_diff.addEventListener('click', () => {
 const ele_mult = document.getElementById('mult');
 ele_mult.addEventListener('click', () => {
     flag[5] = '*';
+    flag[4] = flag[5];
     console.log('mult');
     decimal_();
     ele.innerText = 0;
@@ -125,6 +128,7 @@ ele_mult.addEventListener('click', () => {
 const ele_divi = document.getElementById('divi');
 ele_divi.addEventListener('click', () => {
     flag[5] = '/';
+    flag[4] = flag[5];
     console.log('divi');
     decimal_();
     ele.innerText = 0;
@@ -193,17 +197,6 @@ ele_equal.addEventListener('click', () => {
     flag[7]++;
     flag[1] = 0;
 })
-
-function equal(){
-    console.log("equal")
-    kei();
-    flag = 0;
-    syoflag = 0;
-    ele.innerText = memory;
-}
-
-
-
 
 const ele_decimal = document.getElementById('decimal');
 ele_decimal.addEventListener('click', () => {
